@@ -1,7 +1,5 @@
 ﻿using Mongo.Entity.Entities;
-using Mongo.Infrastructure.DBSettings.Interface;
 using Mongo.Infrastructure.Interfaces;
-using MongoDB.Driver;
 
 namespace Mongo.Infrastructure.Repositories
 {
@@ -13,6 +11,6 @@ namespace Mongo.Infrastructure.Repositories
         {
         }
 
-       
+
     }
 }

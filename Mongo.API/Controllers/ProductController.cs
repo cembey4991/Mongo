@@ -9,12 +9,12 @@ namespace Mongo.API.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
-        
+
 
         public ProductController(IProductService productService)
         {
             _productService = productService;
-       
+
         }
 
 
@@ -54,10 +54,10 @@ namespace Mongo.API.Controllers
         public async Task<IActionResult> GetAllProduct()
         {
             var products = await _productService.GetAll();
-           
+
             return Ok(products);
         }
-       
+
 
 
     }

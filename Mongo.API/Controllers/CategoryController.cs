@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Mongo.Business.Interface;
 using Mongo.Entity.Entities;
 
@@ -26,8 +25,8 @@ namespace Mongo.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
-           
-            return Ok( await _categoryService.GetAll());
+
+            return Ok(await _categoryService.GetAll());
         }
         [HttpPut]
         public async Task<IActionResult> ReplaceCategory(Category category)
@@ -47,8 +46,8 @@ namespace Mongo.API.Controllers
             await _categoryService.DeleteById(id);
             return NoContent();
         }
-      
-       
+
+
 
         //[HttpGet]
         //public async Task<IActionResult> GetAllCategories()
